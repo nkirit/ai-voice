@@ -2,6 +2,8 @@
 
 Isomorphic TypeScript TTS library for OpenAI, ElevenLabs, and Google Cloud TTS. **BYOK** — bring your own API key. Works in Node 18+ and modern browsers (no vendor SDKs, just `fetch`).
 
+**[Live demo →](https://ai-voice-demo.vercel.app)**
+
 ## Install
 
 ```bash
