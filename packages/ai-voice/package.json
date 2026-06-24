@@ -1,6 +1,6 @@
 {
   "name": "@nkirit/ai-voice",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Isomorphic TypeScript TTS client for OpenAI, ElevenLabs, and Google Cloud TTS. BYOK.",
   "license": "MIT",
   "type": "module",
