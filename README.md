@@ -50,38 +50,12 @@ npm publish --access public
 
 ## Deploying the demo
 
-Deployment is automated via GitHub Actions on every push to `main`. First-time setup:
+The demo site auto-deploys to Vercel on every push to `main` via Vercel's native Git integration.
 
-### 1. Get your Vercel credentials
+### First-time setup
 
-**VERCEL_TOKEN** — go to `vercel.com/account/tokens` → **Create** → copy the token.
+1. Go to [vercel.com](https://vercel.com) → **Add New Project** → import the GitHub repo
+2. Set **Root Directory** to `apps/demo`
+3. Vercel auto-detects Next.js — click **Deploy**
 
-**VERCEL_ORG_ID + VERCEL_PROJECT_ID** — link the project locally (no global install needed):
-
-```bash
-npx vercel login
-npx vercel link
-```
-
-This creates `.vercel/project.json` with both IDs:
-
-```json
-{
-  "orgId": "...",
-  "projectId": "..."
-}
-```
-
-### 2. Add secrets to GitHub
-
-Go to your repo → **Settings → Secrets and variables → Actions** and add:
-
-| Secret | Value |
-|---|---|
-| `VERCEL_TOKEN` | token from step 1 |
-| `VERCEL_ORG_ID` | `orgId` from `.vercel/project.json` |
-| `VERCEL_PROJECT_ID` | `projectId` from `.vercel/project.json` |
-
-### 3. Deploy
-
-Push to `main` — the [`deploy-demo` workflow](./.github/workflows/deploy-demo.yml) will build and deploy automatically. You can also trigger it manually from the Actions tab.
+That's it. No secrets or GitHub Actions needed.
