@@ -1,6 +1,6 @@
 # ai-voice
 
-Monorepo containing the `@neelkirit/ai-voice` npm library and a Next.js demo site.
+Monorepo containing the `@nkirit/ai-voice` npm library and a Next.js demo site.
 
 ## Packages
 

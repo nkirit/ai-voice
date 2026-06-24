@@ -1,19 +1,19 @@
-# @neelkirit/ai-voice
+# @nkirit/ai-voice
 
 Isomorphic TypeScript TTS library for OpenAI, ElevenLabs, and Google Cloud TTS. **BYOK** — bring your own API key. Works in Node 18+ and modern browsers (no vendor SDKs, just `fetch`).
 
-**[Live demo →](https://ai-voice-demo.vercel.app)**
+**[Live demo →](https://ai-voice-app-iota.vercel.app)**
 
 ## Install
 
 ```bash
-npm install @neelkirit/ai-voice
+npm install @nkirit/ai-voice
 ```
 
 ## Quick start
 
 ```ts
-import { synthesize } from "@neelkirit/ai-voice";
+import { synthesize } from "@nkirit/ai-voice";
 
 const bytes = await synthesize({
   provider: "openai",
@@ -26,7 +26,7 @@ const bytes = await synthesize({
 ## Streaming
 
 ```ts
-import { synthesizeStream } from "@neelkirit/ai-voice";
+import { synthesizeStream } from "@nkirit/ai-voice";
 
 const stream = await synthesizeStream({
   provider: "elevenlabs",
@@ -102,7 +102,7 @@ await synthesize({
 ## Error handling
 
 ```ts
-import { synthesize, InvalidApiKeyError, ProviderError, VoiceAppError } from "@neelkirit/ai-voice";
+import { synthesize, InvalidApiKeyError, ProviderError, VoiceAppError } from "@nkirit/ai-voice";
 
 try {
   const bytes = await synthesize({ provider: "openai", apiKey: "bad", text: "hi" });

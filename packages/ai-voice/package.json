@@ -29,6 +29,6 @@
   "engines": { "node": ">=18.18" },
   "publishConfig": { "access": "public" },
   "keywords": ["tts", "openai", "elevenlabs", "google-cloud-tts", "isomorphic", "byok"],
-  "repository": { "type": "git", "url": "https://github.com/neelkirit/ai-voice" },
-  "homepage": "https://github.com/neelkirit/ai-voice#readme"
+  "repository": { "type": "git", "url": "https://github.com/nkirit/ai-voice" },
+  "homepage": "https://github.com/nkirit/ai-voice#readme"
 }
